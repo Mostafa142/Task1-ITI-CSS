@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+.parent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent div {
+  background-color: brown;
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+.one {
+  transition: transform 0.8s;
+}
+.one:hover {
+  transform: translate(0px, 100px);
+  cursor: pointer;
+}
+.two {
+  transition: transform 0.8s;
+}
+.two:hover {
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+.three {
+  transition: transform 0.5s;
+}
+.three:hover {
+  transform: scale(130%);
+  cursor: pointer;
+}
+.four {
+  transition: transform 0.5s;
+}
+.four:hover {
+  transform: skew(-10deg, -10deg);
+  cursor: pointer;
+}
